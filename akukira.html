@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link href="https://feeldreams.github.io/akukira/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  
+<head>
+<title>Script HTML buat Kamu</title>
+<link rel="icon" type="image/x-icon" href="https://www.palingit.com/favicon.ico">
+<meta name="description" content="HTML Replit Coding">
+<!-- 
+  Made with love by Rayys!
+  
+     Blog: https://PalingIT.com
+     Instagram: @rayyarrr
+     TikTok: @rayy4r
+     Email: rayyar0703@gmail.com
+     
+  Thanks to all <3
+-->
+</head>
+<body>
+	
+   <!-- Ganti Audio di sini -->
+   <audio src="https://feeldreams.github.io/tobelove.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="https://feeldreams.github.io/papjalan3.jpeg" id="wallpaper"/>
+   </div>
+   
+   <div id='Content'>
+
+     <div id="ftAwal">
+       <!-- Stiker Pembuka -->
+       <img src="https://feeldreams.github.io/pandaputih.gif" id="ftoAwal"/>
+     </div>
+
+     <div id="loveIn">
+       <!-- Tombol LOVE --><label class='lovein'>&#10084;</label>
+     </div>
+     <p id="ket">Sentuh LOVEnya!</p>
+
+     <div class="kumpulanstiker">
+         <!-- Stiker untuk Konten -->
+         <img src="https://feeldreams.github.io/raintogether.gif" id="fotostiker"/>
+         <img src="https://feeldreams.github.io/heart.png" id="fotostikerA"/>
+     </div>
+     
+     <div><div id='pergeseran'>
+     	
+        <p><b>
+	        <span id="inihalo"></span>
+        </b></p>
+        
+        <p><b>
+	        <span>aku cuma mau bilang</span>
+        </b></p>
+
+        <p><b>
+	        <span>saat pertama kali aku mengenalmu</span>
+        </b></p>
+
+        <p><b>
+	        <span>ku kira kamu hanya akan menjadi bagian pertemanan yang singkat</span>
+        </b></p>
+        
+        <p><b>
+	        <span>dan ternyata sampai saat ini</span>
+        </b></p>
+        
+        <p><b>
+	        <span id="iniakhir">kamu masih menjadi peran terpenting dalam hidupku</span>
+        </b></p>
+        
+     </div></div>
+
+     <p id="ketgeser">Klik untuk Geser!</p>
+
+     <div><blockquote id='bq'>
+       <p id="halo" class="halo"></p>
+       <p id="kalimat"></p>
+       
+       <p id="pesanAkhir" class="gaya4"></p>
+       
+     </blockquote></div>
+     
+   </div>
+
+<!-- Jangan Edit Bagian Ini --><script>
+  const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2500, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.src); ftganti=0;fungsi=0;fungsiAwal=0;deffotostiker=fotostiker.src;function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);Content.style = "opacity:1;margin-top:14vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80,}); 
+
+async function inipesan(){
+     var { value: nama } = await swals.fire({
+         title: 'Masukin Nama Kamu', input: 'text',
+     });
+     if(nama && nama.length < 11){
+       window.nama = nama;
+       inihalo.innerHTML = "haii, " + nama + "! ✨";
+       mulainama();
+       } else {
+         await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');inipesan();
+      }
+}
+
+pesanAkhir1 = "oh ya sebelum tahun 2022 berakhir, aku mau bilang:";
+pesanAkhir2 = "thank you for coming in my life, i'm very lucky to have met you. i know people come and go, i hope you will always beside me, i promise i will always love u and you will always be my favorite person..";
+pesanAkhir3 = "i love uuu ><";
+
+totalPesan = 6; //Input total pesan (slide) di sini ya!
+
+</script>
+<script src="https://feeldreams.github.io/akukira/script.js"></script>
+<!-- Sampai Sini -->
+</body>
+  </html>
